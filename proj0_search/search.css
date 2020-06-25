@@ -1,0 +1,74 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.bigsearch {
+    text-align: center;
+    margin: auto;  
+    transform: translate(0, 50%);                      
+}         
+
+.links {
+    text-align: right;
+    font-weight: bold
+}
+
+.roundsearch{
+    border-radius:30px;
+    width:50%;
+    height:100%;
+    font-size: 150%;
+    outline:none;
+    padding:5px;
+    padding-left: 20px
+}
+
+.googlsubmit {
+    font-size: 120%;
+    width:20%;
+    height:100%
+}      
+
+.tddesc {
+    padding:.3%;
+    width:1%;
+    white-space:nowrap;
+    padding-right: 1%;
+}
+
+.tdinput {
+    padding:.3%;
+    padding-right: 20%
+}
+
+.advanceinput {
+    float:right;
+    font-size:100%;
+    outline:none;
+    padding:0%;
+    width: 80%;
+    padding-right: 20%;
+}
+
+.advancesubmit {
+    float:right;
+    white-space: normal;
+    background-color: blue;
+    color: white;
+    font-size:110%;
+    font-weight: bold;
+}   
+
+table{
+    width:100%
+}
+
+button{
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 400%;
+}
