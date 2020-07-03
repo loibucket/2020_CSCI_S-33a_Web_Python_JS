@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block body %}
+    <h2>{{heading}}</h2>
+    <br>
+    <form action="make">
+        <input class="one_line_input" type="text" name="page_title" placeholder="Page Title" value={{page_title}}>
+        <br><br>        
+        <textarea name="page_contents" rows="10" cols="30" placeholder="Page Contents">{{ page_contents }}</textarea>
+        <br>        
+        <input type="hidden" name="edit_page_token" value={{edit_page_token}}>            
+        <input type="submit" value="Save Page">
+    </form>
+{% endblock %}
