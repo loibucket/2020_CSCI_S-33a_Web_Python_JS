@@ -4,7 +4,10 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
+from django.contrib.auth.decorators import login_required
+
 from .models import User
+from .models import Listing
 
 
 def index(request):
@@ -62,8 +65,39 @@ def register(request):
     else:
         return render(request, "auctions/register.html")
 
+
+@login_required()
 def create_listing(request):
     if request.method == "POST":
-        return
+        title = request.POST["title"]
+        description = request.POST["description"]
+        image_url = request.POST["image_url"]
+        starting_bid = request.POST["starting_bid"]
+        seller = request.user
+        print(title, description, starting_bid, image_url, seller)
+
+        #listing = Listing(title=title, description=description, image_url=image_url,
+        #                  is_active=True, starting_bid=starting_bid, current_bid=starting_bid, seller=seller)
+
+        #listing.save()
+
+        # Attempt to create new listing
+        try:
+            listing = Listing(title=title, description=description, image_url=image_url,
+                              is_active=True, starting_bid=starting_bid, current_bid=starting_bid, seller=seller)
+            listing.save()
+            return render(request, "auctions/create_listing.html", {
+                "message": "Listing created",
+            })
+        except:
+            return render(request, "auctions/create_listing.html", {
+                "message": "Input Error: Please check fields again",
+                "title": title,
+                "description": description,
+                "image_url": image_url,
+                "starting_bid": starting_bid
+            })
+
+        return render(request, "auctions/create_listing.html")
     else:
         return render(request, "auctions/create_listing.html")

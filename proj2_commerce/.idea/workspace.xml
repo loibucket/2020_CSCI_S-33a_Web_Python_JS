@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8fcf384b-82c4-4098-bed3-a5785a2d959b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/sandbox-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/sandbox-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/shellbox-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auctions/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auctions/migrations/0002_auction_listing_bid_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auctions/migrations/0003_auto_20200708_2117.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auctions/migrations/0004_auto_20200708_2122.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auctions/migrations/0005_auto_20200708_2124.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auctions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auctions/static/auctions/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/static/auctions/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auctions/templates/auctions/create_listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/templates/auctions/create_listing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auctions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commerce.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/commerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shellbox.ipynb" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1eSW56tjlTj5RplQvf6xpdBs2uz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fcf384b-82c4-4098-bed3-a5785a2d959b" name="Default Changelist" comment="" />
+      <created>1594315287836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594315287836</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="516" y="23" width="655" height="877" key="#Notifications" timestamp="1594401363559">
+      <screen x="36" y="23" width="1404" height="877" />
+    </state>
+    <state x="516" y="23" width="655" height="877" key="#Notifications/36.23.1404.877@36.23.1404.877" timestamp="1594401363559" />
+    <state x="203" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594330103325">
+      <screen x="38" y="23" width="1402" height="877" />
+    </state>
+    <state x="203" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/38.23.1402.877@38.23.1402.877" timestamp="1594330103325" />
+    <state x="441" y="143" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594401351940">
+      <screen x="36" y="23" width="1404" height="877" />
+    </state>
+    <state x="441" y="143" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/36.23.1404.877@36.23.1404.877" timestamp="1594401351940" />
+    <state x="93" y="306" key="FileChooserDialogImpl" timestamp="1594317791645">
+      <screen x="37" y="23" width="1403" height="877" />
+    </state>
+    <state x="93" y="306" key="FileChooserDialogImpl/37.23.1403.877@37.23.1403.877" timestamp="1594317791645" />
+    <state x="94" y="306" key="FileChooserDialogImpl/38.23.1402.877@38.23.1402.877" timestamp="1594316493753" />
+    <state x="228" y="100" key="SettingsEditor" timestamp="1594399894006">
+      <screen x="36" y="23" width="1404" height="877" />
+    </state>
+    <state x="228" y="100" key="SettingsEditor/36.23.1404.877@36.23.1404.877" timestamp="1594399894006" />
+    <state x="229" y="100" key="SettingsEditor/37.23.1403.877@37.23.1403.877" timestamp="1594317953723" />
+    <state x="230" y="100" key="SettingsEditor/38.23.1402.877@38.23.1402.877" timestamp="1594318277994" />
+    <state x="501" y="213" key="search.everywhere.popup" timestamp="1594399843714">
+      <screen x="36" y="23" width="1404" height="877" />
+    </state>
+    <state x="501" y="213" key="search.everywhere.popup/36.23.1404.877@36.23.1404.877" timestamp="1594399843714" />
+  </component>
+</project>
