@@ -1,8 +1,63 @@
 body {
     padding: 10px;
+    min-width: 600px;
 }
 
-#description {
+h1 {
+  background-color: #F0F8FF;
+}
+
+h2 {
+  background-color: #F0F8FF;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.big_img {
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  float: right;
+  padding: 10px;
+}
+
+a {
+  color: black;
+}
+
+.column * {
+  margin:10px
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+input[type=number]{
+    width: 8em;
+}
+
+p[class=preview] {
+  width: 200px;
+  height: 77px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+textarea[id=create_description] {
     width: 100%;
     height: 20em;
+}
+
+div[id=single_listing] {
+    float: left;
+    margin: 30px;
 }
