@@ -4,7 +4,6 @@
 
 <img class="big_img" src="{{listing.image_url}}" alt="{{listing.image_url}}"/>
 <h2>{{listing.title}}</h2>
-
 <h5>
     {% if listing.is_active %}
     --Active Listing--
@@ -12,23 +11,49 @@
     --Inactive Listing--
     {%endif%}
 </h5>
-
 <h5>Current Bid: {{current_bid}}</h5>
 <h5>Number of Bids: {{n_bids}}</h5>
 <h5>High Bidder: {{high_bidder}}</h5>
 
-{#comment: allow place bid only if logged in#}
+{% if auction_winner %}
+<h6 style='color:red'>You are the Winner!</h6>
+{% endif %}
 
-{% if user.is_authenticated %}
-<form action="{% url 'listing_details' %}" method="post">
+{#comment: allow place bid only if logged in#}
+{% if user.is_authenticated%}
+
+{% if listing.is_active %}
+<form action="{% url 'place_bid' %}" method="post">
     {% csrf_token %}
-    <h5><input type="number" step = 0.01 min=0.01 max=100000 name="bid_amount" placeholder="Bid Amount" size="5" value="{{bid_amount}}">{{status_message|safe}}
+    <h5><input type="number" step=0.01 min=0.01 max=100000 name="bid_amount" placeholder="Bid Amount" size="5"
+               value="{{bid_amount}}">{{status_message|safe}}
     </h5>
     <input type="hidden" name="listing_id" value={{listing.id}}>
-    <input class="btn btn-primary" type="submit" value="Place Bid">
+    <div class="buffer_bottom"><input class="btn btn-primary" type="submit" value="Place Bid"></div>
 </form>
+{% endif %}
+
+<form action="{% url 'watchlist_modify' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="listing_id" value={{listing.id}}>
+    <div class="buffer_bottom"><input class="btn btn-primary" type="submit" value="{{watch_button}}"></div>
+</form>
+
+{% if listing.is_active %}
+{% if allow_end_item %}
+<form action="{% url 'end_listing' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="listing_id" value={{listing.id}}>
+    <div class="buffer_bottom"><input class="btn btn-primary" type="submit" value="End Listing"></div>
+</form>
+{% endif %}
+{% endif %}
+
+{#comment: if user is not logged in#}
 {% else %}
+{% if listing.is_active %}
 <a class="btn btn-primary" href="{% url 'login' %}">Login in to place bid</a>
+{% endif %}
 {% endif %}
 
 <br><br>
@@ -61,5 +86,23 @@
     {% endfor %}
 
 </table>
+
+<br><br>
+<h2>Comments:</h2>
+{% if user.is_authenticated%}
+<form action="{% url 'comment' %}" method="post">
+    {% csrf_token %}
+    <div class="buffer_bottom">
+        <textarea required class="form-control" id="add_comment" name="comment" placeholder="Comment"></textarea>
+    </div>
+    <input type="hidden" name="listing_id" value={{listing.id}}>
+    <div class="buffer_bottom"><input class="btn btn-primary" type="submit" value="Add Comment">
+</form>
+{% endif %}
+
+<br>
+{% for comment in comments %}
+{{comment.commenter}} : {{comment.comment}}<br>
+{% endfor %}
 
 {% endblock %}

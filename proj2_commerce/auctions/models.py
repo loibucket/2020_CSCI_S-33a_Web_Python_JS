@@ -57,3 +57,16 @@ class Comment(models.Model):
     listing = models.ForeignKey("Listing", on_delete=models.PROTECT)
     commenter = models.ForeignKey("User", on_delete=models.PROTECT)
     comment = models.CharField(max_length=9000)
+    comment_time = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Id: {self.id} | Time:{self.comment_time} | User:{self.commenter}"
+
+
+# watchlist
+class Watchlist(models.Model):
+    listing = models.ForeignKey("Listing", on_delete=models.PROTECT)
+    user = models.ForeignKey("User", on_delete=models.PROTECT)
+
+    def __str__(self):
+        return f"Id: {self.id} | User:{self.user} | Listing:{self.listing}"

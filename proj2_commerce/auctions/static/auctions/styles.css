@@ -1,14 +1,26 @@
 body {
     padding: 10px;
-    min-width: 600px;
+    min-width: 700px;
+    max-width: 900px;
+    margin:0 auto;
+}
+
+a {
+  color: black;
 }
 
 h1 {
   background-color: #F0F8FF;
+  padding: 10px;
 }
 
 h2 {
   background-color: #F0F8FF;
+  padding: 5px;
+}
+
+.buffer_bottom{
+  margin-bottom:10px;
 }
 
 img {
@@ -25,8 +37,10 @@ img {
   padding: 10px;
 }
 
-a {
-  color: black;
+.small_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .column * {
@@ -46,7 +60,7 @@ input[type=number]{
 }
 
 p[class=preview] {
-  width: 200px;
+  width: 300px;
   height: 77px;
   overflow: hidden;
   text-overflow: ellipsis;
