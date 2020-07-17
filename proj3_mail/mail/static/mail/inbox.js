@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     load_mailbox("inbox")
 })
 
-// send email button function
+// send email button function action
 function send_email() {
     // make api call
     fetch("/emails", {
@@ -43,7 +43,7 @@ function send_email() {
         })
 }
 
-// compose email button
+// compose email button action
 function compose_email(recipients = "", subject = "", body = "") {
 
     // new email if no recipients specified, or else do a reply
@@ -78,7 +78,7 @@ function load_mailbox(mailbox) {
         .then(result => list_emails(mailbox, result))
 }
 
-//helper to display contents of a mailbox
+// helper to display contents of a mailbox
 function list_emails(mailbox, emails) {
 
     // Make email table
@@ -102,7 +102,6 @@ function list_emails(mailbox, emails) {
         insert_block("td", address, "#email_row_" + i)
         insert_block("td", emails[i].subject, "#email_row_" + i)
         insert_block("td", emails[i].timestamp, "#email_row_" + i)
-        insert_block("td", emails[i].read, "#email_row_" + i)
 
         // clicking on the email loads the email, and marks it as read if from inbox
         row.addEventListener("click", function() {
@@ -112,7 +111,6 @@ function list_emails(mailbox, emails) {
         })
     }
 }
-
 
 // helper to show a single email
 function load_email(email_id, mailbox) {
