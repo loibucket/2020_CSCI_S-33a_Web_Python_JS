@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fcf384b-82c4-4098-bed3-a5785a2d959b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auctions/templates/auctions/categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj3_mail/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj3_mail/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj3_mail/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj3_mail/.idea/proj3_mail.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj3_mail/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/sandbox-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/sandbox-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auctions/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auctions/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auctions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auctions/static/auctions/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/static/auctions/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auctions/templates/auctions/create_listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/templates/auctions/create_listing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auctions/templates/auctions/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/templates/auctions/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auctions/templates/auctions/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/templates/auctions/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auctions/templates/auctions/listing_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/templates/auctions/listing_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auctions/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auctions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auctions/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/auctions/templates/auctions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">

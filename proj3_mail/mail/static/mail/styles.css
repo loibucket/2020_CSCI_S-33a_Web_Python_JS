@@ -1,0 +1,23 @@
+textarea {
+    min-height: 300px;
+}
+
+table {
+    border: 1px solid #ddd;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 0px 10px 0px 10px;
+}
+
+#message-view {
+    color: blue;
+}
+
+button {
+    margin: 5px 5px 0px 0px;
+}
