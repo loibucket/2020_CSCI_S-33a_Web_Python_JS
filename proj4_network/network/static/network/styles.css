@@ -1,0 +1,29 @@
+.navbar{
+    border-style: solid;
+    border-color: gray;
+    border-width: 0.1em;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#heading-view{
+
+}
+
+#new-post-view{
+    border-style: solid;
+    border-color: gray;
+    border-width: 0.1em;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#new-post-textarea{
+    min-width: 90%;
+    min-height: 90%;
+    margin-bottom: 10px;
+}
+
+#main-body{
+    margin: 30px;
+}
