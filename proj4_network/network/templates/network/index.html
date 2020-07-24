@@ -1,14 +1,28 @@
 {% extends "network/layout.html" %}
-{% block script %}<script src="static/network/index.js"></script>{% endblock %}
+{% block script %}
+<script src="static/network/index.js"></script>{% endblock %}
 {% block body %}
 
-<br><h4><div id="heading-view"></div></h4><br>
+<h4>
+    <div id="heading-view"></div>
+</h4>
 
-<div id="new-post-view">
-<h5>New Post</h5>
-<textarea class="form-control" id="new-post-textarea"></textarea>
-<button class = "btn btn-sm btn-outline-primary">Post</button>
+<div id="profile-view">
+    <div id="followers-view">Followers</div>
+    <div id="following-view">Following</div>
+    {% if user.is_authenticated %}
+    <input id="login_user" type=hidden value="{{ user.username }}"></input>
+    <div id="follow-button"></div>
+    {% endif %}
 </div>
+
+{% if user.is_authenticated %} <div id="new-post-view">
+    <h5>New Post</h5>
+    <textarea class="form-control" id="new-post-textarea" required></textarea>
+    <button class="btn btn-sm btn-outline-primary" id="new_post">Post</button>
+    <div id="new-post-callback"><br></div>
+</div>
+{% endif %}
 
 <div id="all-posts-view">
 

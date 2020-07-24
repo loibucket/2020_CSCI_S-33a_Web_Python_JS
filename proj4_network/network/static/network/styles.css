@@ -1,4 +1,23 @@
-.navbar{
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#post-status {
+    animation-name: hide;
+    animation-duration: 3s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+.navbar {
     border-style: solid;
     border-color: gray;
     border-width: 0.1em;
@@ -6,24 +25,52 @@
     padding: 10px;
 }
 
-#heading-view{
-
-}
-
-#new-post-view{
+#new-post-view {
     border-style: solid;
-    border-color: gray;
+    border-color: blue;
     border-width: 0.1em;
     border-radius: 5px;
     padding: 10px;
+    margin-top: 10px;
 }
 
-#new-post-textarea{
+#new-post-textarea {
     min-width: 90%;
     min-height: 90%;
+}
+
+#main-body {
+    margin: 30px;
+}
+
+.single-post-view {
+    border-style: solid;
+    border-color: gray;
+    border-width: 0.1em;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+#heading-view {
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#main-body{
-    margin: 30px;
+#profile-view {
+    border-style: solid;
+    border-color: blue;
+    border-width: 0.1em;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#follow-span {
+    color: blue;
+}
+
+button {
+    margin-right: 5px;
+    margin-top: 5px;
 }
