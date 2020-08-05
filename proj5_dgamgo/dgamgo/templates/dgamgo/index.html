@@ -1,0 +1,44 @@
+{% extends "dgamgo/layout.html" %}
+{% load static %}
+{% block script %}
+<script src="{% static 'dgamgo/index.js' %}"></script>
+{% endblock %}
+{% block body %}
+<div id="game-view">
+    <h3>
+        <div id="message_a">Login to Play</div>
+    </h3>
+    <h3>
+        <div id="message_b"></div>
+    </h3>
+    {% if user.is_authenticated %}
+    {% csrf_token %}
+    <h3>
+        <div id="options-view">
+            <button class="btn btn-sm btn-outline-primary" id="single">Single Player</button>
+            <button class="btn btn-sm btn-outline-primary" id="two-p">Two Players</button>
+            <button class="btn btn-sm btn-outline-primary" id="reset">Reset</button>
+        </div>
+    </h3>
+    <div id="board-view">
+        <table id="board-table">
+            <tr>
+                <td class="tic-square" id="top-left">✕</td>
+                <td class="tic-square" id="top-mid">✕</td>
+                <td class="tic-square" id="top-right">✕</td>
+            </tr>
+            <tr>
+                <td class="tic-square" id="mid-left">✕</td>
+                <td class="tic-square" id="mid-mid">✕</td>
+                <td class="tic-square" id="mid-right">✕</td>
+            </tr>
+            <tr>
+                <td class="tic-square" id="bot-left">✕</td>
+                <td class="tic-square" id="bot-mid">✕</td>
+                <td class="tic-square" id="bot-right">✕</td>
+            </tr>
+        </table>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

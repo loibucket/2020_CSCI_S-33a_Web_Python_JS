@@ -1,0 +1,100 @@
+#login-view{
+    padding: 50px;
+}
+
+#register-view{
+    padding: 50px;
+}
+
+#game-view{
+    padding: 10px;
+    min-width: 350px;
+}
+
+#main-body{
+    min-width: 350px;
+}
+
+#top-left{
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+#top-mid{
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+}
+
+#top-right{
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+}
+
+#mid-left{
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+#mid-mid{
+    border: 5px solid black;
+}
+
+#mid-right{
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+#bot-left{
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+}
+
+#bot-mid{
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+}
+
+#bot-right{
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+}
+
+#board-table{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.tic-square{
+    font-size: min(11vh,16vw);
+    width: min(20vh,30vw);
+    height: min(20vh,30vw);
+    text-align: center
+}
+
+/*djanble django table*/
+
+.djanble {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.djanble td, #djanble th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.djanble tr:nth-child(even){background-color: #f2f2f2;}
+
+.djanble th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}

@@ -1,0 +1,33 @@
+{% extends "dgamgo/layout.html" %}
+
+{% block script %}
+{% endblock %}
+
+{% block body %}
+
+<h2>
+    Fastest Games: {%if type == "draw"%}Draws{%elif type == "win"%}Wins{%endif%}
+    <a href="{% url 'leaderboard' %}draw"><button class="btn btn-sm btn-outline-primary" id="single">Draws</button></a>
+    <a href="{% url 'leaderboard' %}win"><button class=" btn btn-sm btn-outline-primary" id="two-p">
+            Wins</button></a>
+</h2>
+
+<table class="djanble">
+    <th>Time</th>
+    <th>Player</th>
+    <th>Duration(s)</th>
+    <th>Outcome</th>
+
+    {% for g in games %}
+
+    <tr>
+        <td>{{g.timestamp}}</td>
+        <td>{{g.player}}</td>
+        <td>{{g.duration}}</td>
+        <td>{{g.winner}}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+{% endblock %}

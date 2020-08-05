@@ -1,0 +1,41 @@
+{% extends "dgamgo/layout.html" %}
+
+{% block script %}
+{% endblock %}
+
+{% block body %}
+
+<h2>
+    Play History: {%if mode == "1P"%}Single Player{%elif mode == "2P"%}Two Players{%endif%}
+    <a href="{% url 'history' %}1P"><button class="btn btn-sm btn-outline-primary" id="single">SinglePlayer</button></a>
+    <a href="{% url 'history' %}2P"><button class=" btn btn-sm btn-outline-primary" id="two-p">Two
+            Players</button></a>
+</h2>
+
+<table class="djanble">
+    <th>Time</th>
+    <th>Winner</th>
+    <th>Duration</th>
+
+
+    {% for g in games %}
+
+    <tr>
+        <td>{{g.timestamp}}</td>
+
+        {%if mode == "1P"%}
+        <td>{%if g.winner == g.firstmover%}player{%elif g.winner == "D" or g.winner == "draw"%}draw{%else%}cpu{%endif%}
+        </td>
+        {%endif%}
+
+        {%if mode == "2P"%}
+        <td>{{g.winner}}</td>
+        {%endif%}
+
+        <td>{{g.duration}}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+{% endblock %}
